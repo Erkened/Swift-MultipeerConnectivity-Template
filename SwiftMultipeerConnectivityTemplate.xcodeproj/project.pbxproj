@@ -13,6 +13,7 @@
 		522189391AE6C86700643F2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522189381AE6C86700643F2A /* Images.xcassets */; };
 		5221893C1AE6C86700643F2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5221893A1AE6C86700643F2A /* LaunchScreen.xib */; };
 		522189481AE6C86700643F2A /* SwiftMultipeerConnectivityTemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522189471AE6C86700643F2A /* SwiftMultipeerConnectivityTemplateTests.swift */; };
+		522189521AE6C9C700643F2A /* P2PBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 522189511AE6C9C700643F2A /* P2PBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		522189411AE6C86700643F2A /* SwiftMultipeerConnectivityTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftMultipeerConnectivityTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		522189461AE6C86700643F2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		522189471AE6C86700643F2A /* SwiftMultipeerConnectivityTemplateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMultipeerConnectivityTemplateTests.swift; sourceTree = "<group>"; };
+		522189511AE6C9C700643F2A /* P2PBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = P2PBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				522189311AE6C86700643F2A /* AppDelegate.swift */,
 				522189331AE6C86700643F2A /* ViewController.swift */,
+				522189511AE6C9C700643F2A /* P2PBrain.swift */,
 				522189351AE6C86700643F2A /* Main.storyboard */,
 				522189381AE6C86700643F2A /* Images.xcassets */,
 				5221893A1AE6C86700643F2A /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				522189341AE6C86700643F2A /* ViewController.swift in Sources */,
 				522189321AE6C86700643F2A /* AppDelegate.swift in Sources */,
+				522189521AE6C9C700643F2A /* P2PBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
