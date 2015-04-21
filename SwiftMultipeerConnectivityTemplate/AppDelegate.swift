@@ -12,10 +12,14 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var p2pBrain:P2PBrain! // Keep a strong reference to P2P Brain or its delegates get deallocated in the background
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Init the P2P Brain and attribute it to a var to keep a stong reference to it
+        p2pBrain = P2PBrain.sharedInstance
+        
         return true
     }
 

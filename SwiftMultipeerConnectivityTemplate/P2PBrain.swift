@@ -17,6 +17,8 @@ import MultipeerConnectivity
 
 class P2PBrain: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, MCNearbyServiceAdvertiserDelegate {
     
+    let serviceType = "SwiftP2P"
+    
     var peer:MCPeerID!
     var session:MCSession!
     var browser:MCNearbyServiceBrowser!
@@ -34,10 +36,10 @@ class P2PBrain: NSObject, MCSessionDelegate, MCNearbyServiceBrowserDelegate, MCN
         session = MCSession(peer: peer)
         session.delegate = self
         
-        browser = MCNearbyServiceBrowser(peer: peer, serviceType: "STB")
+        browser = MCNearbyServiceBrowser(peer: peer, serviceType: serviceType)
         browser.delegate = self
         
-        advertiser = MCNearbyServiceAdvertiser(peer: peer, discoveryInfo: nil, serviceType: "STB")
+        advertiser = MCNearbyServiceAdvertiser(peer: peer, discoveryInfo: nil, serviceType: serviceType)
         advertiser.delegate = self
         
         browser.startBrowsingForPeers()
